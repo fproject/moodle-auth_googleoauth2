@@ -1,9 +1,11 @@
 {
+    "name": "fproject/moodle-auth_googleoauth2",
+    "description": "OAuth2 library for moodle",
     "repositories": [
-      {
-        "type": "vcs",
-        "url": "https://github.com/mouneyrac/oauth2-dropbox"
-      }
+        {
+            "type": "vcs",
+            "url": "https://github.com/mouneyrac/oauth2-dropbox"
+        }
     ],
     "require": {
         "league/oauth2-client": "^0.12.1",
