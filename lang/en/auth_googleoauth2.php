@@ -47,6 +47,15 @@ On the confirmation page, look for the "Skip to Developer Dashboard" link > on t
 $string['auth_facebookclientid_key'] = 'Facebook App ID';
 $string['auth_facebookclientsecret'] = '';
 $string['auth_facebookclientsecret_key'] = 'Facebook App secret';
+
+$string['auth_vpclientid'] = '
+Site URL: {$a->siteurl}
+<br/>App domains: {$a->sitedomain}
+<br/>Valid OAuth redirect URIs: {$a->callbackurl}';
+$string['auth_vpclientid_key'] = 'VCIC ID';
+$string['auth_vpclientsecret'] = '';
+$string['auth_vpclientsecret_key'] = 'VCIC secret';
+
 $string['auth_githubclientid'] = 'Your client ID/Secret can be generated in your <a href="https://github.com/settings/applications/new" target="_blank">Github register application page</a>:
 <br/>Homepage URL: {$a->siteurl}
 <br/>Authorization callback URL: {$a->callbackurl}';
@@ -111,6 +120,7 @@ If you want to position the buttons yourself in your login page, you can keep th
 $string['emailaddressmustbeverified'] = 'Your email address is not verified by the authentication method you selected. You likely have forgotten to click on a "verify email address"
 link that Google or Facebook should have sent you during your subscribtion to their service.';
 $string['auth_sign-in_with'] = 'Sign-in with {$a->providername}';
+$string['verifiedAccesstokenfaild'] = 'Verify accesstoken faild.';
 $string['faileduserdetails'] = 'The site succeed to connect to the selected provider but failed to retrieve your user details. If you are using Google, check that your site administrator has enabled the Google+ API in the Google developer console. It is the most common reason for this error.';
 $string['moreproviderlink'] = 'Sign-in with another service.';
 $string['signinwithanaccount'] = 'Log in with {$a}';

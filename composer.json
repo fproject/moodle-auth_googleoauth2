@@ -10,6 +10,7 @@
     "require": {
         "league/oauth2-client": "^0.12.1",
         "depotwarehouse/oauth2-bnet": "^3.0",
-        "pixelfear/oauth2-dropbox": "dev-bugfix"
+        "pixelfear/oauth2-dropbox": "dev-bugfix",
+        "fproject/php-jwt" :"4.0.1"
     }
 }

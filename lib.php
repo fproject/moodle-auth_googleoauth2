@@ -40,7 +40,7 @@ function googleoauth2_html_button($authurl, $providerdisplaystyle, $provider) {
  * @return array
  */
 function provider_list() {
-    return array('google', 'facebook', 'battlenet', 'github', 'linkedin', 'messenger', 'microsoft', 'vk', 'dropbox');
+    return array('vp','google', 'facebook', 'battlenet', 'github', 'linkedin', 'messenger', 'microsoft', 'vk', 'dropbox');
 }
 
 /**
@@ -57,21 +57,10 @@ function oauth_add_to_log($courseid, $module, $action, $url='', $info='', $cm=0,
 
 function googleoauth2_provider_redirect($providername) {
     global $CFG;
-
-    $code = optional_param('code', '', PARAM_TEXT); // Google can return an error.
+    $code = optional_param('code', '', PARAM_TEXT);
 
     if (empty($code)) {
         throw new moodle_exception($providername . '_failure', 'auth_googleoauth2');
-    }
-
-    $state = optional_param('state', null, PARAM_TEXT);
-    // Clean the state from a weird #_=_ added to the end by facebook.
-    $state = str_replace('#_=_' , '', $state);
-
-    // Ensure that this is no request forgery going on.
-    // And that the user sending us this connect request is the user that was supposed to.
-    if (empty($state) || ($_SESSION['oauth2state_' . $providername] !== $state)) {
-        throw new moodle_exception('invalidstateparam', 'auth_googleoauth2');
     }
 
     $loginurl = '/login/index.php';

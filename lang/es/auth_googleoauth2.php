@@ -32,6 +32,17 @@ $string['auth_facebookclientsecret_key'] = 'Facebook App secreto';
 $string['auth_githubclientid'] = 'Tu ID cliente/Secreto puede ser generado en tu <a href="https://github.com/settings/applications/new">página de solicitud de registro en Github</a>:
 <br/>Página de inicio URL: {$a->siteurl}
 <br/>Callback URL de autorización: {$a->callbackurl}';
+
+$string['auth_vpclientid'] = 'Tu App ID/Secreto puede ser generado en tu <a href="https://developers.vcic.com/apps/">página de desarrollador de VCIC</a>:
+<br/>Sitio URL: {$a->siteurl}
+<br/>Sitio del dominio: {$a->sitedomain}';
+$string['auth_vpclientid_key'] = 'VCIC App ID';
+$string['auth_vpclientsecret'] = 'Ver arriba.';
+$string['auth_vpclientsecret_key'] = 'VCIC App secreto';
+$string['auth_githubclientid'] = 'Tu ID cliente/Secreto puede ser generado en tu <a href="https://github.com/settings/applications/new">página de solicitud de registro en Github</a>:
+<br/>Página de inicio URL: {$a->siteurl}
+<br/>Callback URL de autorización: {$a->callbackurl}';
+
 $string['auth_githubclientid_key'] = 'Github ID ciente';
 $string['auth_githubclientsecret'] = 'Ver arriba.';
 $string['auth_githubclientsecret_key'] = 'Github secreto cliente';

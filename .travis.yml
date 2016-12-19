@@ -12,7 +12,6 @@ before_script:
  - git clone git://github.com/moodle/moodle ../moodle && cd ../moodle
  - git checkout $MOODLE_VERSION
  - composer self-update
- - mv ../moodle-auth_googleoauth2 auth/googleoauth2
  - cp config-dist.php config.php
  - sh -c "sed -i -e s/'password'/''/ -e s/example.com/localhost/ -e s%192.168.1.250%localhost% -e s%/home/example%$HOME% -e 's%\(\$CFG.*bht\)%\n\1%' -e 's%\(\$CFG.*behat_wwwroot.*http://127\)%\n\1%' config.php"
  - sh -c "sed -i -e s/'http:\/\/127.0.0.1\/moodle'/'http:\/\/localhost:8000'/ config.php"
